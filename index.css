@@ -1,0 +1,244 @@
+/*CHECK SIZES LATER OF H1 AND TEXT FOR PHONE AND CHECK WITH MOZILLA ANDCHROME*/
+/*
+	1 General structure 
+	2 Organization layout Flexbox 
+	3 Specific items
+	4 
+*/
+
+/*1 General structure */
+body{
+	text-align: center;
+	color: white;
+	margin:0;
+	/*font-family: Raleway,sans-serif;*/
+	font-family: monospace;
+	font-size: 20px;
+	/*background-color: black;*/
+	background-color:#3366ff;
+	margin: 30px;
+}
+
+p {
+	font-family: mnbk;
+	margin:  10px;
+}
+
+h1 {
+	font-size: 50px;
+}
+
+#header{
+	background-color: black;
+	margin: -30px -30px 0px -30px;
+	border-radius: 0px;
+}
+
+
+
+/*div {
+	border-radius: 25px;
+}*/
+
+div.contentblue{
+	border-radius: 25px;
+	background-color: #3366ff;
+	border-style: solid;
+    border-color: white;
+    border-width: 4px;
+    opacity:0.8;
+	/*border-bottom: 6px solid white;*/
+	/*margin-bottom: 10px;*/
+}
+/*div.contentblack{
+	border-radius: 25px;
+	background-color: black;
+	border-style: solid;
+    border-color: white;
+    border-width: 4px;
+    opacity:0.9;
+	/*border-bottom: 6px solid white;*/
+	/*margin-bottom: 10px;
+}
+*/
+
+div.contentblue:hover{
+	background: black;
+
+}
+
+div.inside {
+padding-top: 10px;
+}
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    animation-play-state: 
+    back
+}
+
+/*2 Organization layout Flexbox */
+.w-33 {  width:  33%; }
+.w-50 {  width:  50%; }
+.w-100 { width: 100%; }
+.fl { float: left;  _display: inline; }
+
+
+
+
+/* 3 Specific Items */
+hr {
+    margin: 20px;
+    border: 2px solid #f00;
+}
+
+/*Text header */
+/* medai 800 px or above */
+
+@media only screen and (min-width:800px) {
+	.typewriter h1 {
+	  overflow: hidden;
+	  border-right: .15em solid orange; 
+	  white-space: nowrap;  
+	  margin: 0 auto;  
+	  letter-spacing: .15em;
+	  animation: 
+	    typing 3.5s steps(30, end),
+	    blink-caret .5s step-end infinite;
+		}
+}
+
+@media only screen and (max-width: 800px){
+	.typewriter h1 {
+	  overflow: hidden; /* Ensures the content is not revealed until the animation */
+	  border-right: .15em solid orange; /* The typwriter cursor */
+	  /*white-space: nowrap;  Keeps the content on a single line */
+	  margin: 0 auto; /* Gives that scrolling effect as the typing happens*/ 
+	  letter-spacing: .15em; /* Adjust as needed */
+	  animation: 
+	    typing 3.5s steps(30, end),
+	    blink-caret .5s step-end infinite;
+	}
+}
+/*Specifyy just for mozilla in phone */
+@media only screen and (min--moz-device-pixel-ratio:0){
+
+}
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange }
+}
+
+/*Nav bar css requirements classes */
+nav {
+	padding: 5px;
+}
+ nav a {
+	color: white;
+	border-left-style: solid;
+	border-right-style: solid;
+    border-width: 2px;
+    padding: 10px;
+}
+
+.bt {
+    border-top-style: solid;
+    border-top-width: 1px;
+}
+.bb {
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+}
+.dib {
+    display: inline-block;
+}
+.link {
+    text-decoration: none;
+    transition: color .15s ease-in;
+}
+
+.link:link, .link:visited {
+    transition: color .15s ease-in;
+}
+
+.link:hover {
+    transition: color .15s ease-in;
+}
+
+.link:active {
+    transition: color .15s ease-in;
+}
+
+.link:focus {
+    transition: color .15s ease-in;
+    outline: 1px dotted currentColor;
+}
+
+.hover-bg-light-blue:hover {
+    background-color: #76c4e2;
+}
+
+.hover-bg-light-blue:focus {
+    background-color: #76c4e2;
+}
+.pa3 {
+    padding: 1rem;
+}
+
+.tc {
+    text-align: center;
+}
+.center {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/*Text Introduction My name*/
+.animated {
+	animation-duration: 7s;
+	animation-fill-mode: both;
+}
+#myname{
+	font-size: 3.8em;
+	margin-bottom: auto;
+	margin-top: 20px;
+]
+}
+@keyframes fadeIn {
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+}
+         
+.fadeIn {
+	animation-name: fadeIn;
+}
+
+/*Online Courses section*/
+div ul {
+	margin: 0px;
+	font-size: 1em;
+}
+.buttom {
+	border-radius: 12px;
+	font-size: 30px;
+	background-color: #008CBA;
+	border: 5px solid #4CAF50;
+	display: inline-block;     
+	position: relative; 
+	z-index: 1;     
+	padding: 0.5em;     
+	margin: -0.5em; 
+	margin-bottom: 20px;
+
+}
